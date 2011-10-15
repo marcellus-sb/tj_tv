@@ -4,6 +4,8 @@ class AdminController extends Controller
 {
     public $layout = '//layouts/admin';
     
+    public $jsList = array('jquery', 'jquery-ui');
+    
     public function filters()
     {
         return array(
