@@ -110,7 +110,7 @@ class AdminController extends Controller
         $pages->pageSize = $pageSize;
         $pages->applyLimit($criteria);
         
-        $texts = MediaText::model()->findAll($criteria);
+        $texts = MediaText::model()->findAll();
         
         
         return $this->render('text', 
